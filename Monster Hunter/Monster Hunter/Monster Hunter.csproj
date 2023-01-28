@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6714E893-E7AD-46A3-8F9F-A6C97A3C7DD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Monster_Hunter</RootNamespace>
+    <AssemblyName>Monster Hunter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MappaDiGioco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MappaDiGioco.Designer.cs">
+      <DependentUpon>MappaDiGioco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterHunter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonsterHunter.Designer.cs">
+      <DependentUpon>MonsterHunter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MappaDiGioco.resx">
+      <DependentUpon>MappaDiGioco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonsterHunter.resx">
+      <DependentUpon>MonsterHunter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ParteLogica\ParteLogica.csproj">
+      <Project>{735afbff-e507-4269-ba6f-6dfa45799fed}</Project>
+      <Name>ParteLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caverna elettrica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deserto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrata grotta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrata regno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foresta banane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foresta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piazza centrale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponte di legno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tana orchi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torre finale drago.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Città.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caverna elettrica2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Città2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrata grotta2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrata regno2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foresta banane2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foresta2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piazza centrale2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponte di legno2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radura2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tana orchi2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torre finale drago2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eroe.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deserto2.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
